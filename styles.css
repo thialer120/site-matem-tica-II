@@ -1,0 +1,109 @@
+/* Reinicializando os estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #0d0d0d; /* Fundo preto */
+    background: linear-gradient(to bottom, #0d0d0d, #3a1c71, #2e1a47); /* Degradê de preto para roxo */
+    background-image: url('foto-azul.jpg') ; /* Link direto para imagem de galáxia */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto quase opaco no cabeçalho */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff; /* Cor branca para o texto do logo */
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente com branco suave */
+    color: white;
+}
+
+.search-bar button {
+    padding: 10px;
+    margin-left: 5px;
+    background-color: #3a1c71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.students {
+    text-align: center;
+    margin: 50px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Preto translúcido */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.planets-intro {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Preto translúcido */
+    border-radius: 10px;
+    color: white;
+}
+
+.planets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.planet {
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Preto translúcido */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    color: white;
+}
+
+.planet img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffffff; /* Texto branco */
+}
+
+p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8); /* Texto branco com transparência */
+}
+
+.planet.highlight {
+    border: 3px solid #3a1c71; /* Borda roxa para destacar o planeta */
+    background-color: rgba(58, 28, 113, 0.5); /* Fundo roxo translúcido */
+    transition: background-color 0.3s, border 0.3s; /* Animação suave */
+}
